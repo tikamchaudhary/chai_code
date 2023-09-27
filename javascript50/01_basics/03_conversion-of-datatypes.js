@@ -33,10 +33,10 @@ true => 1  false => 0
 const valueInBool1 = Boolean(1);
 const valueInBool2 = Boolean(0);
 const valueInBool3 = Boolean(-1);
-const valueInBool4=Boolean(1.5);
-const valueInBool5=Boolean(-1.5);
-const valueInBool6=Boolean("");
-const valueInBool7= Boolean("abc");
+const valueInBool4 = Boolean(1.5);
+const valueInBool5 = Boolean(-1.5);
+const valueInBool6 = Boolean("");
+const valueInBool7 = Boolean("abc");
 
 // console.log(valueInBool1, typeof valueInBool1);
 // console.log(valueInBool2, typeof valueInBool2);
@@ -58,5 +58,54 @@ const valueInBool7= Boolean("abc");
 */
 
 // convert to string
-const valueInStr=String(100);
-console.log(valueInStr,typeof valueInStr);
+const valueInStr = String(100);
+// console.log(valueInStr,typeof valueInStr);
+
+
+/**************Operations************** */
+
+const value = 30;
+// console.log(-value);
+
+// console.log(2 + 2);
+// console.log(4 - 2);
+// console.log(2 * 2);
+// console.log(2 ** 3);
+// console.log(15 / 2);
+// console.log(15 % 2);
+
+
+
+
+const str1 = "Hello";
+const str2 = " Tikam Singh";
+const str3 = str1 + str2;
+// console.log(str3);
+
+
+// console.log("1" + 2);
+// console.log(1 + "2");
+// console.log("1" + 2 + 2);
+// console.log(1 + 2 + "2");
+
+// console.log(3 + 1 * 4 % 3);
+// console.log((3 + 1) * 4 % 3);
+
+// console.log(+true);
+// console.log(-true);
+// console.log(+false);
+// console.log(-false);
+
+
+let gameCounter = 100;
+// ++gameCounter;
+// gameCounter++;
+// --gameCounter;
+gameCounter--;
+
+console.log(gameCounter);
+
+
+
+//link to study
+// https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
