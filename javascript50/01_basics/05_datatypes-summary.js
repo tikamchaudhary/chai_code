@@ -52,7 +52,10 @@ let num1 = 45;
 let num2 = num1;
 num2 = 50;
 
-const user1 = { name: "Tikam", age: 30 };
+const user1 = {
+    name: "Tikam",
+    age: 30
+};
 const user2 = user1;
 user2.name = "Shivam";
 
