@@ -65,10 +65,21 @@ const url = 'https://www.tikam.com/tikam%20chaudhary';
 
 const studentName = new String('vishal');
 const studentNameStr = studentName.valueOf();
-const studentNameStr1= studentName.toString();
+const studentNameStr1 = studentName.toString();
 
 // console.log(studentName, typeof studentName);
 // console.log(studentNameStr, typeof studentNameStr);
 // console.log(studentNameStr1, typeof studentNameStr1);
 
-/****************** Note:- serch(),match(),matchAll() **************/
+/****************** Note:- serch(),match(),matchAll() do it ???.... **************/
+
+// To capitalize the first letter of a string
+
+const strSmall = "tikam";
+const firstChar = strSmall.charAt(0).toUpperCase();
+const remainingChars = strSmall.slice(1);
+// console.log(`${firstChar}${remainingChars}`);
+
+// console.log(strSmall[0].toUpperCase()+strSmall.slice(1));
+
+console.log(strSmall.charAt(0).toUpperCase() + strSmall.slice(1));
