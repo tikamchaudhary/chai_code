@@ -59,7 +59,28 @@ const user1 = {
 const user2 = user1;
 user2.name = "Shivam";
 
-console.log("num1: ", num1);
-console.log("num2: ", num2);
-console.log("user1: ", user1);
-console.log("user2: ", user2);
+// console.log("num1: ", num1);
+// console.log("num2: ", num2);
+// console.log("user1: ", user1);
+// console.log("user2: ", user2);
+
+let num4 = 10;
+let num5 = num4;
+// console.log(num1 == num2);
+// console.log(num1 === num2);
+
+const person1 = {};
+const person2 = person1;
+const person3 = {};
+
+
+const arr1 = [];
+const arr2 = arr1;
+const arr3 = [];
+
+
+// console.log(person1 === person2);
+// console.log(arr1 === arr2);
+
+console.log(arr1 === arr3);
+console.log(person1 === person3);
