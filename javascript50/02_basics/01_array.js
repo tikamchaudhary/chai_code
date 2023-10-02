@@ -92,12 +92,84 @@ const filterData2 = data.filter(item => item > 60);
 
 // .includes()
 const colors = ['red', 'green', 'black'];
-console.log('color:', colors);
+// console.log('color:', colors);
 
 // console.log(colors.includes('green')); // true
 // console.log(colors.includes('yellow'));  //false
 
 // .indexOf()
 // If indexOf() doesn't return -1, the array contains the given item.
-console.log(colors.indexOf('black') !== -1) // true
-console.log(colors.indexOf('yellow') !== -1) // false
+// console.log(colors.indexOf('black') !== -1) // true
+// console.log(colors.indexOf('yellow') !== -1) // false
+
+
+/***************** Append an item to an array *********************************/
+// .push() ==> Appends new elements to the end of an array, and returns the new length of the array.
+const fruits1 = ['apple', 'mango'];
+// console.log('fruits1:',fruits1);
+// console.log('length:',fruits1.length);
+
+const newLength = fruits1.push('banaba', 'guava');
+// console.log('fruits1:',fruits1);
+// console.log('new length:',newLength);
+
+
+/******************** Remove the last item from an array **************************************/
+// .pop() ==> Removes the last element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
+const fruits2 = ['mango', 'apple', 'orange'];
+// console.log('fruits2:', fruits2);
+
+const removedItem = fruits2.pop()
+// console.log('fruits2:', fruits2);
+// console.log('removed item:', removedItem);
+
+/**Note:- .pop() can only be used to remove the last item from an array. To remove multiple items from the end of an array, to use .splice() **/
+
+/*********** Remove multiple items from the end of an array **************************/
+// array.splice(startIndex, deleteCount, addItem);
+
+const numbers2 = [10, 20, 30, 40, 50, 60];
+// console.log('numbers2:',numbers2);
+const removedItems = numbers2.splice(-3); //to remove the last 3 items
+// console.log('numbers2:',numbers2);
+// console.log('removed items:',removedItems);
+
+/********* Truncate an array down to just its first N items *****************************/
+// array.splice(startIndex, deleteCount, addItem);
+
+const numbers3 = [10, 20, 30, 40, 50, 60];
+// console.log('numbers3:', numbers3);
+const removed_items = numbers3.splice(2); // To truncate this array down to just its first 2 items.
+// console.log('numbers3:', numbers3);
+// console.log('removed items:', removed_items);
+
+/*************** Remove the first item from an array *************************/
+// .shift() => Removes the first element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
+// Note:- shift() can only be used to remove the first item from an array. To remove multiple items from the beginning of an array, to use .splace() method.
+
+const colorNames = ['red', 'blue', 'green'];
+// console.log('colorNames:',colorNames);
+const removed_item = colorNames.shift();
+// console.log('colorNames:',colorNames);
+// console.log('removed item:',removed_item);
+
+/****************** Remove multiple items from the beginning of an array ***************/
+// array.splice(startIndex, deleteCount, addItem);
+
+const numbers4 = [10, 15, 20, 25, 30];
+// console.log('numbers4:', numbers4);
+const removed__items = numbers4.splice(0, 3); // remove the first 3 items
+// console.log('numbers4:', numbers4);
+// console.log('removed items:', removed__items);
+
+// array.filter()
+const myArray = [1, 2, 3, 4, 5, 6];
+const new_myArray = myArray.filter((_, index) => index >= 3); // remove the first 3 items
+// console.log("myArray:", myArray);
+// console.log('new_myArray:', new_myArray);
+
+// array.slice(startIndex, endIndex); // note:- endIndex is not include.
+const otherNums = [1, 2, 3, 4, 5, 6];
+const new_otherNums = otherNums.slice(3); // remove the first 3 items
+console.log('otherNums:', otherNums);
+console.log('new otherNums:', new_otherNums);
