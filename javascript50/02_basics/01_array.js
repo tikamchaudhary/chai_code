@@ -6,10 +6,10 @@ const fruits = new Array('apple', 'orange', 'mango', 'orange', 'banana', 'orange
 
 const names = "Tikam,Shivam,Aman,Rahul,Vishal".split(',');//created using String.prototype.split() 
 
-console.log('numbers: ', numbers, " length: ", numbers.length);
-console.log('numbers1: ', numbers1,);
-console.log('fruits: ', fruits);
-console.log('names: ',names);
+// console.log('numbers: ', numbers, " length: ", numbers.length);
+// console.log('numbers1: ', numbers1);
+// console.log('fruits: ', fruits);
+// console.log('names: ', names);
 
 /************* update array elements by index *********************/
 // numbers1[2]='five';
@@ -349,14 +349,29 @@ const copy_languages3 = Array.from(languages);
 //4. concat()
 const copy_languages4 = [].concat(languages);
 
+//5. Using map():
+const copy_languages5 = languages.map(item => item);
 
-// console.log('languages:', languages);
+//6.Using Array Destructuring (ES6 and later):
+const [...copy_languages6] = languages;
+
+//7.Using Array.from() with a Mapping Function:
+const copy_languages7 = Array.from(languages, item => item);
+
+//8.Using JSON Serialization (Not recommended for arrays with non-primitive types):
+const copy_languages8=JSON.parse(JSON.stringify(languages));
+
+console.log('languages:', languages);
 // console.log('copy_languages1:', copy_languages1);
 // console.log('copy_languages2:', copy_languages2);
 // console.log('copy_slice:', copy_slice);
 
 // console.log('copy_languages3:', copy_languages3);
 // console.log('copy_languages4:', copy_languages4);
+// console.log('copy_languages5:', copy_languages5);
+// console.log('copy_languages6:', copy_languages6);
+// console.log('copy_languages7:', copy_languages7);
+// console.log('copy_languages8:', copy_languages8);
 
 /*
 All built-in array-copy operations (spread syntax, Array.from(), Array.prototype.slice(),
@@ -386,6 +401,9 @@ deep_copy[2].push('guava');
 // console.log('shallow_copy:', shallow_copy);
 // console.log('deep_copy:', deep_copy);
 
+/*################ deep copy using a  custom method:- ##################*/
+
+// .......
 
 /*********************** Creating a two-dimensional array **********************************/
 const board = [
