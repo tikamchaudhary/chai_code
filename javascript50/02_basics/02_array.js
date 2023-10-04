@@ -34,7 +34,7 @@ const score3 = 300;
 
 // array.every(callback(element, index, array), thisArg);
 const values = [2, 4, 6, 8, 10];
-const values1 = [2, 4, 6, 8, 10,13];
+const values1 = [2, 4, 6, 8, 10, 13];
 const isEven1 = values.every(item => item % 2 === 0);
 const isEven2 = values1.every(item => item % 2 === 0);
 
@@ -42,3 +42,15 @@ const isEven2 = values1.every(item => item % 2 === 0);
 // console.log(isEven2 ? "all items'even'." : "all items not 'even'.");
 
 // .reduce()
+
+
+/*********** Array Destructuring ********************/
+let x, y;
+[x, y] = [10, 20];
+console.log('x:', x);
+console.log('y:', y);
+
+const [a, b, ...rest] = [10, 20, 30, 40, 50];
+console.log('a:', a);
+console.log('b:', b);
+console.log('rest:', rest);
