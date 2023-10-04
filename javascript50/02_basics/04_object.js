@@ -57,6 +57,7 @@ const fruit = {
 // console.log(Object.keys(fruit));
 // console.log(Object.values(fruit));
 // console.log(Object.entries(fruit));
+// console.log(fruit.hasOwnProperty('color'));
 
 /*************  object destructuring *******************/
 
