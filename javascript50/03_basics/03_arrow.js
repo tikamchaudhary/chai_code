@@ -58,4 +58,17 @@ const addTwoNum = (num1, num2) => ({ userName: 'Ajay' });
 // console.log(addTwoNum(4, 5));
 
 const squar = num => num ** 2;
-console.log(squar(4));
+// console.log(squar(4));
+
+/*_______________________________________________________________________________*/
+
+function normal(){
+    console.log('normal',this);
+}
+
+const arrow=()=>{
+    console.log('arrow',this);
+}
+
+normal();
+arrow();
