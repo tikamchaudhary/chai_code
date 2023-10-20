@@ -16,8 +16,9 @@ const names = "Tikam,Shivam,Aman,Rahul,Vishal".split(',');//created using String
 // console.log(numbers1);
 
 /*********** Create a string from an array ****************************/
-// console.log(numbers.toString(),typeof(numbers.toString())); // 2,4,6,8,10 string
-// console.log(numbers.join(),typeof(numbers.join())); // 2,4,6,8,10 string
+// console.log(numbers.toString(), typeof (numbers.toString())); // 2,4,6,8,10 string
+// console.log(`${numbers}`, typeof `${numbers}`); // 2,4,6,8,10 string
+// console.log(numbers.join(), typeof (numbers.join())); // 2,4,6,8,10 string
 // console.log(numbers.join('*')); // 2*4*6*8*10
 
 
@@ -359,9 +360,9 @@ const [...copy_languages6] = languages;
 const copy_languages7 = Array.from(languages, item => item);
 
 //8.Using JSON Serialization (Not recommended for arrays with non-primitive types):
-const copy_languages8=JSON.parse(JSON.stringify(languages));
+const copy_languages8 = JSON.parse(JSON.stringify(languages));
 
-console.log('languages:', languages);
+// console.log('languages:', languages);
 // console.log('copy_languages1:', copy_languages1);
 // console.log('copy_languages2:', copy_languages2);
 // console.log('copy_slice:', copy_slice);
